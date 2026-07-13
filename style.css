@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    font-family: monospace;
+    font-weight: 100;
+    font-size: 0.8rem;
+}
+
+button {
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 10px;
+    background-color: blue;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.256);
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.hero-section {
+    position: relative;
+
+}
+
+.hero-item {
+    background-color: red;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+
+.hero-item h2 {
+    font-size: 2rem;
+}
+
+.hero-image {
+    position: relative;
+    width: 100%;
+}
+
+.hero-image img {
+    height: 80vh;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    margin-bottom: 150px;
+    font-size: 1.5rem;
+
+}
+
+.speakers {
+    width: 90%;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 380px);
+    grid-gap: 30px;
+    justify-content: center;
+
+}
+
+.card img {
+    height: 250px;
+    width: 100%;
+
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.352);
+    width: 380px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.title {
+    color: blue;
+    font-size: 0.8rem;
+}
+
+.name {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.heading1 {
+    margin-top: 50px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.price-head {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 80px;
+}
+
+.price-card {
+    width: 300px;
+    background-color: whitesmoke;
+    padding: 30px;
+    border: 1px solid white;
+    border-radius: 20px;
+    display: grid;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.price-card h4 {
+    color: rgba(128, 128, 128, 0.68);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.price-card h1 {
+    font-weight: 900;
+}
+
+.price-card p {
+    color: rgba(128, 128, 128, 0.68);
+    margin-bottom: 5px;
+
+}
+
+.offers {
+    list-style: none;
+    font-size: 1rem;
+}
+
+.offers li {
+    margin-top: 2px;
+}
+
+.pricebtn {
+    margin-top: 20px;
+    padding: 12px;
+    border: 1px solid blue;
+    background-color: #fff;
+    width: 100%;
+}
+
+.price-tag {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    column-gap: 12px;
+}
+
+.procard {
+    background-color: rgba(2, 2, 70, 0.92);
+    color: white;
+
+}
+
+.probtn {
+    background-color: #1877F2;
+    border: 1px solid black;
+}
+
+.sec3-head {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.schedule-card {
+    font-family: monospace;
+    border: 1px solid white;
+    width: 380px;
+    background-color: rgba(128, 128, 128, 0.276);
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    transition: 0.2s ease;
+}
+
+.schedule-card ul {
+    list-style: none;
+
+}
+
+.day-head {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.activites {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    line-height: 50px;
+}
+
+.event-activites {
+    display: grid;
+    grid-template-columns: repeat(3, 380px);
+    justify-content: center;
+    column-gap: 50px;
+}
+
+.schedule-section{
+    width:85%;
+    margin:100px auto;
+}
+
+.schedule-heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+.schedule-card{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    background:white;
+    border-radius:12px;
+    padding:25px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s ease;
+}
+
+
+.schedule-heading h2{
+    font-size:2.5rem;
+    margin-bottom:15px;
+}
+
+
+.days{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-bottom:50px;
+}
+
+.day{
+    padding:15px 35px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.day h3{
+    margin-bottom:5px;
+}
+
+.day.active{
+    background:#2563eb;
+    color:white;
+}
+
+
+.schedule-heading p{
+    color:#666;
+    font-size:1.1rem;
+}
+
+.timeline{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.day:hover{
+    background:#2563eb;
+    color:white;
+}
+
+.time{
+    min-width:120px;
+    background:#2563eb;
+    color:white;
+    padding:12px 15px;
+    border-radius:8px;
+    text-align:center;
+    font-weight:bold;
+}
+
+.details h3{
+    margin-bottom:10px;
+}
+
+.details p{
+    color:#666;
+    line-height:1.6;
+}
+.price-card:hover{
+    transform: translateY(-5px);
+}
